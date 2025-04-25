@@ -1,2 +1,10 @@
+[build]
+target = "x86_64-metal.json"
+
 [unstable]
+build-std-features = ["compiler-builtins-mem"]
 build-std = ["core", "compiler_builtins"]
+panic-abort-tests = true
+
+[target.'cfg(target_os = "none")']
+runner = "bootimage runner"
