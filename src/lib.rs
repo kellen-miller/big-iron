@@ -1,4 +1,8 @@
 #![no_std]
+#![cfg_attr(test, no_main)]
+#![feature(custom_test_frameworks)]
+#![test_runner(crate::test_runner)]
+#![reexport_test_harness_main = "test_main"]
 
 pub mod serial;
 pub mod vga_buffer;
@@ -20,13 +24,11 @@ where
     }
 }
 
-pub fn test_runner(tests: &[&dyn Testable]) { // new
+pub fn test_runner(tests: &[&dyn Testable]) {
     serial_println!("Running {} tests", tests.len());
-
     for test in tests {
-        test.run(); // new
+        test.run();
     }
-
     exit_qemu(QemuExitCode::Success);
 }
 
