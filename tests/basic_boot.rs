@@ -7,6 +7,13 @@
 use big_iron::println;
 use core::panic::PanicInfo;
 
+#[unsafe(no_mangle)]
+pub extern "C" fn _start() -> ! {
+    test_main();
+
+    loop {}
+}
+
 #[panic_handler]
 fn panic(info: &PanicInfo) -> ! {
     big_iron::test_panic_handler(info)
