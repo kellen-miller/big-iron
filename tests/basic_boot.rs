@@ -4,14 +4,14 @@
 #![test_runner(big_iron::test_runner)]
 #![reexport_test_harness_main = "test_main"]
 
-use big_iron::println;
+use big_iron::{hlt_loop, println};
 use core::panic::PanicInfo;
 
 #[unsafe(no_mangle)]
 pub extern "C" fn _start() -> ! {
     test_main();
 
-    loop {}
+    hlt_loop();
 }
 
 #[panic_handler]
