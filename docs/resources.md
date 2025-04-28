@@ -30,7 +30,13 @@
 
 - [Virtualization Technology Overview](https://www.youtube.com/watch?v=7igpsgCZJY4) - Video explaining virtualization technology concepts, principles, and applications.
 
-- [Rust Kernel Adventures](https://not-matthias.github.io/posts/rust-kernel-adventures/) - Blog post series documenting experiences and lessons learned while developing a kernel in Rust.
+- [Rust Kernel Adventures](https://not-matthias.github.io/posts/rust-kernel-adventures/) - Blog post exploring custom memory allocators in Rust for kernel development, discussing implementation techniques and challenges.
+
+- [Kernel Driver Development with Rust](https://not-matthias.github.io/posts/kernel-driver-with-rust/) - Tutorial on developing kernel drivers using Rust, covering the basics of kernel module development and Rust's safety features in kernel context.
+
+- [Kernel Printing with Rust](https://not-matthias.github.io/posts/kernel-printing-with-rust/) - Guide on implementing printing functionality in a kernel using Rust, explaining how to set up logging and output in a kernel environment.
+
+- [Kernel Driver Development with Rust (2022 Update)](https://not-matthias.github.io/posts/kernel-driver-with-rust-2022/) - Updated tutorial on kernel driver development with Rust, incorporating newer Rust features and kernel development techniques.
 
 - [Hypervisor GitHub Collection](https://github.com/stars/not-matthias/lists/hypervisor) - Curated list of hypervisor-related projects on GitHub, compiled by not-matthias.
 
