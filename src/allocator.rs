@@ -32,7 +32,7 @@ pub fn init_heap(
     }
 
     unsafe {
-        ALLOCATOR.lock().init(HEAP_START, HEAP_SIZE);
+        ALLOCATOR.lock().init(HEAP_START, HEAP_START + HEAP_SIZE);
     }
 
     Ok(())
