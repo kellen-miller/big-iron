@@ -4,6 +4,15 @@ tasks:
   format:
     cmds:
       - cargo fmt --all
+
   lint:
     cmds:
       - cargo clippy --fix --allow-dirty
+
+  test:
+    cmds:
+      - cargo test
+
+  run:
+    cmds:
+      - cargo run
