@@ -1,16 +1,17 @@
-use crate::allocator::linked_list::LinkedListAllocator;
+use crate::allocator::fixed_size_block::FixedSizeBlockAllocator;
 use x86_64::VirtAddr;
 use x86_64::structures::paging::mapper::MapToError;
 use x86_64::structures::paging::{FrameAllocator, Mapper, Page, PageTableFlags, Size4KiB};
 
 pub mod bump;
+pub mod fixed_size_block;
 pub mod linked_list;
 
 pub const HEAP_START: usize = 0x_4444_4444_0000;
 pub const HEAP_SIZE: usize = 100 * 1024; // 100KiB
 
 #[global_allocator]
-static ALLOCATOR: Locked<LinkedListAllocator> = Locked::new(LinkedListAllocator::new());
+static ALLOCATOR: Locked<FixedSizeBlockAllocator> = Locked::new(FixedSizeBlockAllocator::new());
 
 pub fn init_heap(
     mapper: &mut impl Mapper<Size4KiB>,
@@ -40,18 +41,18 @@ pub fn init_heap(
 }
 
 pub struct Locked<A> {
-    inner: spin::Mutex<A>,
+    mu: spin::Mutex<A>,
 }
 
 impl<A> Locked<A> {
     pub const fn new(inner: A) -> Self {
         Locked {
-            inner: spin::Mutex::new(inner),
+            mu: spin::Mutex::new(inner),
         }
     }
 
     pub fn lock(&self) -> spin::MutexGuard<A> {
-        self.inner.lock()
+        self.mu.lock()
     }
 }
 
