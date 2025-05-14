@@ -28,6 +28,9 @@
 - [TockOS](https://github.com/tock/tock) - Tock is a flexible, real-time operating system for embedded systems.
 - [DroneOS](https://github.com/drone-os/drone-core) - DroneOS is a free and open-source operating system for embedded
   devices.
+- [OS1](https://github.com/SauravMaheshkar/os1) - Bare Bones rust os implementation
+- [ARM64 OS](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials) - Bare bones ARM64 tutorial
+- [RISCV64 OS](https://osblog.stephenmarz.com/index.html) - Making a RISC-V Operating System using Rust
 
 ### Articles
 
