@@ -1,4 +1,4 @@
-# Project
+# Project Structure
 
 The following is a basic project structure for the Rust implementation of the distributed hyperkernel. The layout
 organizes the project into logical modules and components to keep the code maintainable and scalable.
