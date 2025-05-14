@@ -50,4 +50,14 @@
 
 - [Virtualization Security Considerations](https://www.youtube.com/watch?v=83euuVIvYcM) - Video discussing security aspects and considerations in virtualization environments and hypervisor implementations.
 
-- []
+- [HubrisOS](https://github.com/oxidecomputer/hubris) - Hubris is a microcontroller operating environment designed for
+  deeply-embedded systems with reliability requirements. Its design was initially proposed in RFD41, but has evolved
+  considerably since then.
+
+- [RTIC](https://rtic.rs/2/book/en/) - Real-Time Interrupt-driven Concurrency for Rust, a framework for writing
+  real-time applications in Rust.
+
+- [TockOS](https://github.com/tock/tock) - Tock is a flexible, real-time operating system for embedded systems.
+
+- [DroneOS](https://github.com/drone-os/drone-core) - DroneOS is a free and open-source operating system for embedded
+  devices.
