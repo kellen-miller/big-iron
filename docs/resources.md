@@ -98,3 +98,4 @@
 - https://github.com/cirosantilli/x86-bare-metal-examples
 - https://www.cs.usfca.edu/~cruse/cs630f08/
 - https://pdos.csail.mit.edu/archive/exo/
+- https://barrelfish.org/documentation.html
