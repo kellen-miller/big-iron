@@ -89,3 +89,12 @@
   hypervisor architectures, types, and design considerations.
 - [Virtualization Security Considerations](https://www.youtube.com/watch?v=83euuVIvYcM) - Video discussing security
   aspects and considerations in virtualization environments and hypervisor implementations.
+
+## Kernel
+
+### Exokernel 
+
+- https://github.com/ReturnInfinity/BareMetal?tab=readme-ov-file
+- https://github.com/cirosantilli/x86-bare-metal-examples
+- https://www.cs.usfca.edu/~cruse/cs630f08/
+- https://pdos.csail.mit.edu/archive/exo/
