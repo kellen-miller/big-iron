@@ -92,10 +92,38 @@
 
 ## Kernel
 
-### Exokernel 
+### Exokernel
 
-- https://github.com/ReturnInfinity/BareMetal?tab=readme-ov-file
-- https://github.com/cirosantilli/x86-bare-metal-examples
-- https://www.cs.usfca.edu/~cruse/cs630f08/
-- https://pdos.csail.mit.edu/archive/exo/
-- https://barrelfish.org/documentation.html
+- [BareMetal OS](https://github.com/ReturnInfinity/BareMetal?tab=readme-ov-file) - A 64-bit operating system written in
+  Assembly language for x86-64 processors, designed with a minimal footprint and maximum performance.
+- [x86 Bare Metal Examples](https://github.com/cirosantilli/x86-bare-metal-examples) - Collection of minimalist x86
+  operating system examples to demonstrate bare metal programming concepts.
+- [CS630 Operating Systems Course](https://www.cs.usfca.edu/~cruse/cs630f08/) - Educational materials from a University
+  of San Francisco course on operating systems focusing on bare metal development.
+- [MIT PDOS Exokernel](https://pdos.csail.mit.edu/archive/exo/) - Research project on exokernel architecture from MIT's
+  Parallel and Distributed Operating Systems group, focusing on application-level resource management.
+- [Barrelfish OS](https://barrelfish.org/documentation.html) - Research operating system implementing a multikernel
+  architecture, developed as a collaboration between ETH Zurich and Microsoft Research.
+
+### Multikernel
+
+- [Azalea](https://github.com/oslab-swrc/Azalea) - A multikernel operating system designed for manycore systems,
+  focusing on scalability and performance across many CPU cores.
+- [Barrelfish Architecture Paper](https://www.trustworthy.systems/publications/nicta_full_text/5618.pdf) - Research
+  paper detailing the architecture and design principles of the Barrelfish multikernel operating system.
+- [Multiprogramming a 64-bit Multicore Processor (Bhardwaj)](https://www.usenix.org/system/files/osdi21-bhardwaj.pdf) -
+  Research paper introducing innovations in multikernel design for modern hardware architectures.
+- [OSDI'21 Bhardwaj Presentation](https://www.usenix.org/system/files/osdi21_slides_bhardwaj.pdf) - Presentation slides
+  describing multikernel innovations presented at the USENIX OSDI conference.
+- [IHK/McKernel](https://ihkmckernel.readthedocs.io/en/latest/) - A lightweight multikernel operating system designed
+  for high-performance computing environments.
+- [Arrakis OS](https://arrakis.cs.washington.edu/) - Research operating system that reduces kernel involvement by giving
+  applications direct access to virtualized hardware.
+- [Quest OS](https://www.questos.org/) - A real-time multikernel operating system designed for mixed criticality systems
+  with timing constraints.
+- [Distributed Shared Persistent Memory (DSPM)](https://dl.acm.org/doi/10.1145/3546591.3547525) - Research paper on
+  distributed memory architecture relevant to multikernel operating system design.
+- [IX Project](https://ix-project.github.io/ix/) - A research operating system designed for high throughput and low
+  latency on multicore servers.
+- [Rack OS](https://sourceforge.net/p/rack-os/wiki/Home/) - A distributed operating system project designed for
+  rack-scale computing environments.
