@@ -35,7 +35,7 @@
 
 ## Papers
 
-- [Handling bidirectional control flow](https://dl.acm.org/doi/10.1145/34282070
+- [Handling bidirectional control flow](https://dl.acm.org/doi/10.1145/34282070)
 
 ## Error Handling
 
