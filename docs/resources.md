@@ -11,6 +11,8 @@
 - [Software-Defined NUMA Servers](https://www.nextplatform.com/2022/09/12/why-arent-there-software-defined-numa-servers-everywhere/) -
   Article discussing the challenges and potential of software-defined NUMA (Non-Uniform Memory Access) server
   architectures.
+- [Apache Mesos](https://mesos.apache.org/) - A cluster resource manager that abstracts CPU, memory, storage, and other
+  resources across machines, enabling fault-tolerant distributed systems and “datacenter as a computer” scheduling.
 
 ## Operating Systems
 
