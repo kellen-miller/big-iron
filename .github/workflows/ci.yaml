@@ -18,6 +18,6 @@ jobs:
         with:
           persist-credentials: false
       - name: Check Rust workspace
-        uses: kellen-miller/ci/.github/actions/rust-check@9478f2f23f217048a86cb1916fb78b312f20afa7
+        uses: kellen-miller/ci/.github/actions/rust-check@6d83b6c0e8b6f407fa2f11e1c974449649cfa1f6
         with:
           checks: fmt clippy
