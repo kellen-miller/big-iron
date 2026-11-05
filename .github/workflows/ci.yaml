@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
-  rust:
+  rust-verification:
     name: Rust / Formatting and static analysis
     runs-on: ubuntu-latest
     steps:
